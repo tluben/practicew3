@@ -4,15 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bulb</title>
 </head>
 
 <body>
-    <h2>JS Power</h2>
+
+    <p id="demo"></p>
+    <p id="title">JS Power</p>
     <img id="bulb" src="bulbOff.jpg">
     <br>
     <button type="button" onclick="document.getElementById('bulb').src='bulbOff.jpg'">OFF</button>
     <button type="button" onclick="document.getElementById('bulb').src='bulbOn.jpg'">On</button>
+    <br>
+    <button type="button" onclick="document.getElementById('title').style.fontSize='50px'">Larger</button>
+    <button type="button" onclick="document.getElementById('title').style.fontSize='12px'">Smaller</button>
+    <br>
+    <button type="button" onclick="document.getElementById('bulb').style.display='none'">Hide</button>
+    <button type="button" onclick="document.getElementById('bulb').style.display=''">Display</button>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Javascript";
+    </script>
+
+
 </body>
 
 </html>

@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb</title>
+    <script>
+        // function buttonHide() {
+        //     document.getElementsByClassName('button').style.display = "none";
+        // }
+        function changeText() {
+            document.getElementById("title").innerHTML = "hello";
+        }
+    </script>
 </head>
 
 <body>
@@ -13,14 +21,18 @@
     <p id="title">JS Power</p>
     <img id="bulb" src="bulbOff.jpg">
     <br>
-    <button type="button" onclick="document.getElementById('bulb').src='bulbOff.jpg'">OFF</button>
-    <button type="button" onclick="document.getElementById('bulb').src='bulbOn.jpg'">On</button>
+    <button class="button" type="button" onclick="document.getElementById('bulb').src='bulbOff.jpg'">OFF</button>
+    <button class="button" type="button" onclick="document.getElementById('bulb').src='bulbOn.jpg'">On</button>
     <br>
-    <button type="button" onclick="document.getElementById('title').style.fontSize='50px'">Larger</button>
-    <button type="button" onclick="document.getElementById('title').style.fontSize='12px'">Smaller</button>
+    <button class="button" type="button"
+        onclick="document.getElementById('title').style.fontSize='50px'">Larger</button>
+    <button class="button" type="button"
+        onclick="document.getElementById('title').style.fontSize='12px'">Smaller</button>
     <br>
-    <button type="button" onclick="document.getElementById('bulb').style.display='none'">Hide</button>
-    <button type="button" onclick="document.getElementById('bulb').style.display=''">Display</button>
+    <button class="button" type="button" onclick="document.getElementById('bulb').style.display='none'">Hide</button>
+    <button class="button" type="button" onclick="document.getElementById('bulb').style.display=''">Display</button>
+    <br>
+    <button type="button" onclick="changeText(console.log('changed'))">Hide Buttons</button>
 
     <script>
         document.getElementById("demo").innerHTML = "Javascript";

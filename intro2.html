@@ -18,6 +18,7 @@
 <body>
 
     <p id="demo"></p>
+    <p id="demo2"></p>
     <p id="title">JS Power</p>
     <img id="bulb" src="bulbOff.jpg">
     <br>
@@ -34,7 +35,7 @@
     <br>
     <button type="button" onclick="changeText(console.log('changed'))">Hide Buttons</button>
     <button type="button" onclick="hideImage(console.log('changed2'))">Hide Image</button>
-
+    <button type="button" onclick="myFunction(console.log('worked'))">External</button>
     <!-- <script src="index.js">
         document.getElementById("demo").innerHTML = "Javascript";
     </script> -->
@@ -42,7 +43,9 @@
 
 </body>
 <footer>
-    <script src="index.js"></script>
+    <script>
+        document.getElementById('demo2').innerHTML = 5 + 3
+    </script>
 </footer>
 
 </html>

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb</title>
-    <script>
-        // function buttonHide() {
-        //     document.getElementsByClassName('button').style.display = "none";
-        // }
-        function changeText() {
-            document.getElementById("title").innerHTML = "hello";
-        }
-    </script>
+    <!-- 
+    // function buttonHide() {
+    // document.getElementsByClassName('button').style.display = "none";
+    // }
+    // function changeText() {
+    // document.getElementById("title").innerHTML = "hello";
+    // } -->
+
 </head>
 
 <body>
@@ -33,12 +33,16 @@
     <button class="button" type="button" onclick="document.getElementById('bulb').style.display=''">Display</button>
     <br>
     <button type="button" onclick="changeText(console.log('changed'))">Hide Buttons</button>
+    <button type="button" onclick="hideImage(console.log('changed2'))">Hide Image</button>
 
-    <script>
+    <!-- <script src="index.js">
         document.getElementById("demo").innerHTML = "Javascript";
-    </script>
+    </script> -->
 
 
 </body>
+<footer>
+    <script src="index.js"></script>
+</footer>
 
 </html>

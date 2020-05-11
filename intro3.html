@@ -12,18 +12,25 @@
         non.
         Aliquid possimus adipisci, facere magni eveniet, soluta ab asperiores quasi, velit minima fugit ad excepturi?
     </p>
-
+    <p id="demo2"></p>
     <button type="button" onclick="docWrite()"></button>
     <button type="button" onclick="window.print()">Print</button>
+    <button type="button" onclick="increment()">Increment</button>
 
     <script>
         x = 4
         y = 3
         z = x + y
-        document.getElementById("demo").innerHTML = "the value of z is" + z + "."
+        document.getElementById("demo").innerHTML = x
+
+        var firstName, lastName
+        firstName = "john"
+        lastName = "doe"
+
+        document.getElementById("demo2").innerHTML = firstName + "<br>" + lastName
     </script>
 
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
 </body>
 
 </html>

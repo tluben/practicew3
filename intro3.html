@@ -18,14 +18,18 @@
     <button type="button" onclick="increment()">Increment</button>
 
     <script>
-        var person = {
-            firstName: "John",
-            age: 32,
-            lastName: "Doe"
+        function myFunction(val1, val2) {
+            return val2 * val1;
         };
+        document.getElementById("demo").innerHTML = myFunction(10, 12);
+        // var person =
+        //     firstName: "John",
+        //     age: 32,
+        //     lastName: "Doe"
+        // };
 
-        document.getElementById("demo").innerHTML =
-            person.firstName + " | " + person.age
+        // document.getElementById("demo").innerHTML =
+        //     person.firstName + " | " + person.age
 
 
         // x = 4

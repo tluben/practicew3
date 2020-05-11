@@ -10,3 +10,4 @@ function increment(){
     x = "john"
     document.getElementById("demo2").innerHTML = x++
 }
+

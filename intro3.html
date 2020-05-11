@@ -18,10 +18,20 @@
     <button type="button" onclick="increment()">Increment</button>
 
     <script>
-        x = 4
-        y = 3
-        z = 4
-        document.getElementById("demo").innerHTML = (x == z) + "<br>" + (y == z)
+        var person = {
+            firstName: "John",
+            age: 32,
+            lastName: "Doe"
+        };
+
+        document.getElementById("demo").innerHTML =
+            person.firstName + " | " + person.age
+
+
+        // x = 4
+        // y = 3
+        // z = 4
+        // document.getElementById("demo").innerHTML = (x == z) + "<br>" + (y == z)
 
         // var firstName, lastName
         // firstName = "john"
@@ -30,7 +40,7 @@
         // document.getElementById("demo2").innerHTML = firstName + "<br>" + lastName
     </script>
 
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 
 </html>

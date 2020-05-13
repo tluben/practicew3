@@ -18,9 +18,11 @@
     <button type="button" onclick="increment()">Increment</button>
 
     <script>
+        var x = myFunction(23, 18)
         function myFunction(val1, val2) {
             return val2 * val1;
         };
+        document.getElementById("demo2").innerHTML = x
         document.getElementById("demo").innerHTML = myFunction(10, 12);
         // var person =
         //     firstName: "John",
